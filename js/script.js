@@ -1,1 +1,2 @@
-let message  = 'Learning demo Project'
+let message = "Learning demo Project";
+console.log(message);
