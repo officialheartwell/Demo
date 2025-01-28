@@ -40,6 +40,18 @@ li a {
   color: aqua;
 }
 
+h1 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.code {
+  color: aqua;
+  text-transform: capitalize;
+}
+
 .container {
   display: flex;
   flex-direction: column;
