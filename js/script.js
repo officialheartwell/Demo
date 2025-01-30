@@ -1,17 +1,36 @@
 "use strick";
-const button = document.querySelector(".btn");
-// const container = document.querySelector(".container");
-const color = document.querySelector(".code");
+const decrease = document.querySelector(".decrease");
+const reset = document.querySelector(".reset");
+const increase = document.querySelector(".increase");
+const display = document.querySelector(".display");
 
-const colors = ["coral", "yellow", "green", "gold"];
-// let index = 0;
+let index = 0;
 
-button.addEventListener("click", () => {
-  let randomNumber = Math.trunc(Math.random() * colors.length);
-
-  document.body.style.background = colors[randomNumber];
-  color.textContent = colors[randomNumber];
-
-  //   index = (index + 1) % colors.length;
+increase.addEventListener("click", () => {
+  index++;
+  display.textContent = index;
+  if (index === +1) {
+    display.style.color = "green";
+   } else if ((index === 0)) {
+    display.style.color = "black";
+  }
+  console.log(index);
 });
 
+reset.addEventListener("click", () => {
+  index = 0;
+  display.textContent = index;
+  if (index === 0) {
+    display.style.color = "black";
+  }
+});
+
+decrease.addEventListener("click", () => {`23`
+  index--;
+  display.textContent = index;
+  if (index === -1) {
+    display.style.color = "red";
+  } else if ((index === 0)) {
+    display.style.color = "black";
+  }
+});
