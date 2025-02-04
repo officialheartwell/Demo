@@ -13,16 +13,19 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+.logo{
+  align-self: self-start;
+}
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
+ display: flex;
+ padding: 1rem 4rem;
+ justify-content: space-between;
 }
 
 ul {
-  display: inline-flex;
-  gap: 25px;
+  display: flex;
+  gap: 30px;
 }
 
 li {
@@ -35,21 +38,24 @@ li {
   display: none;
 }
 
-@media (max-width: 789px) {
+@media screen and (max-width: 800px) {
+  .logo{
+    display: none;
+  }
   nav{
     width: 100%;
     height: 50px;
-    display: flex;
+    justify-content: end;
   }
 
   ul {
+    /* justify-self: end; */
     flex-direction: column;    
   }
 
   li {
     list-style: none;
-    padding: 10px 0px;
-    align-items: end;
+    /* padding: 10px 0px; */
     text-align: center;
   }
 
