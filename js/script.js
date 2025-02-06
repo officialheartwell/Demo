@@ -62,12 +62,15 @@ const author = document.querySelector(".author");
 let currentQuote = 0;
 
 newQuote.addEventListener("click", () => {
-  let quotetext = randomQuote[currentQuote];
+  let randomNun = Math.trunc(Math.random() * randomQuote.length);
+  console.log(randomNun);
+
+  let quotetext = randomQuote[randomNun];
   quote.textContent = quotetext.quote;
   author.textContent = quotetext.author;
   // currentQuote++;
   currentQuote = (currentQuote + 1) % randomQuote.length;
-  console.log(currentQuote);
+  // console.log(currentQuote);
 });
 
 // function randomNum(){
