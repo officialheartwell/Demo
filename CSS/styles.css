@@ -14,3 +14,15 @@ body {
   overflow: hidden;
 }
 
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 1rem 3rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
