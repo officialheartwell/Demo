@@ -11,12 +11,6 @@ const modalThree = document.querySelector(".modal-three");
 const answer = document.createElement("p");
 answer.classList.add("hidden");
 
-// const showMinus = function () {
-//   console.log(showModal);
-//   for (let i = 0; i < showModal.length; i++) {
-//     showModal[i].src = "/images/minus.png";
-//   }
-// };
 
 for (let i = 0; i < showModal.length; i++) {
   //Modal One
